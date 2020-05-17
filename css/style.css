@@ -1,0 +1,188 @@
+*
+{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+}
+header{
+    background-image:url('../images/wine.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 180px;
+    width: auto;
+    float: left;
+    border-radius: 100%;
+    
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid #D60000;
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full{
+    background-color: transparent;
+    color: #01E700;
+    margin-right: 15px;
+    border: 2px solid #D91337;
+}
+.btn-half{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.btn-full:hover{
+    background-color:#FF5E00;
+}
+.btn-half:hover{
+    background-color: #FE5C5C;
+}
+.colorchange{
+    animation: colorchangevikram 1s infinite;
+}
+@keyframes colorchangevikram{
+    0%{color: #ff4500}
+    25%{color: aqua}
+    50%{color:green}
+    100%{color: yellow;}
+
+}
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+@media only screen and (max-width: 998px){
+    h1{
+        font-size: 200%;
+        
+    }
+}
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 180%;
+
+    }
+    
+    
+    @media only screen and (max-width: 676px)
+    {
+        h1{
+        font-size: 150%;
+        
+    }
+    .main-nav{
+        display: none;
+    }
+    .mobile-icon{
+        display: inline-block;
+        color: #fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+
+    }
+    .main-nav{
+        float: left;
+    }
+    .main-nav li{
+        
+        display: block;
+        margin-top: 10px;
+
+    }
+}
+@media only screen and (max-width: 458px){
+    .btn-full{
+        
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 120%;
+        
+    }
+    
+}
+@media only screen and (max-width: 404px)
+{
+    .main-nav animated slideInDown{
+        margin-bottom: 80px;
+        float: left;
+    }
+    .mobile-icon{
+        display: inline-block;
+        color: #fff;
+        
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    h1{
+        margin-top: 50px;
+        font-size: 80%;
+        margin-bottom: 30px;
+    }
+}
